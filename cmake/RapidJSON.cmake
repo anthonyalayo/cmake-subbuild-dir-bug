@@ -3,13 +3,12 @@ block()
 
   cpmaddpackage(
     NAME rapidjson
-    GITHUB_REPOSITORY "Tencent/rapidjson"
-    GIT_TAG ${VERSION_HASH}
     OPTIONS
     "RAPIDJSON_BUILD_DOC OFF"
     "RAPIDJSON_BUILD_TESTS OFF"
     "RAPIDJSON_BUILD_EXAMPLES OFF"
     "RAPIDJSON_BUILD_CXX17 ON"
+    URL https://github.com/Tencent/rapidjson/archive/${VERSION_HASH}.tar.gz
   )
 
   # rapidjson misses setting up the build interface include
