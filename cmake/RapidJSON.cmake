@@ -3,8 +3,7 @@ block()
 
   FetchContent_Declare(
     rapidjson
-    GIT_REPOSITORY "https://github.com/Tencent/rapidjson"
-    GIT_TAG ${VERSION_HASH}
+    URL https://github.com/Tencent/rapidjson/archive/${VERSION_HASH}.tar.gz
   )
 
   set(RAPIDJSON_BUILD_DOC OFF)
