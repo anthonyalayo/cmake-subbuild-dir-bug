@@ -9,3 +9,6 @@ To reproduce,
 4. `cmake -B build`
 5. `git checkout main`
 6. `cmake -B build`
+
+Although not necessary for reproduction, you can build the binary via
+`cmake --build build --target main`.

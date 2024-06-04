@@ -7,7 +7,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-include(CPM)
+include(FetchContent)
 include(RapidJSON)
 
 add_executable(main main.cpp)
